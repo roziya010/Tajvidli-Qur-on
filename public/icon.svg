@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#065F46" />
+      <stop offset="100%" stop-color="#042F2E" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3D27A" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#9E7A1B" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="url(#bg)" />
+  <rect x="24" y="24" width="464" height="464" rx="76" fill="none" stroke="url(#gold)" stroke-width="4" stroke-opacity="0.45" />
+  <g transform="translate(256 256)">
+    <rect x="-120" y="-120" width="240" height="240" rx="8" fill="none" stroke="url(#gold)" stroke-width="10" />
+    <rect x="-120" y="-120" width="240" height="240" rx="8" fill="none" stroke="url(#gold)" stroke-width="10" transform="rotate(45)" />
+    <circle cx="0" cy="0" r="78" fill="#053E31" stroke="url(#gold)" stroke-width="6" />
+    <path d="M -48 -14 C -26 -28 -8 -24 0 -10 C 8 -24 26 -28 48 -14 L 48 34 C 26 22 8 24 0 38 C -8 24 -26 22 -48 34 Z" fill="none" stroke="url(#gold)" stroke-width="7" stroke-linejoin="round" />
+    <line x1="0" y1="-10" x2="0" y2="38" stroke="url(#gold)" stroke-width="6" stroke-linecap="round" />
+    <circle cx="0" cy="-42" r="7" fill="url(#gold)" />
+  </g>
+</svg>

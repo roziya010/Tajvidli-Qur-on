@@ -1,0 +1,6 @@
+{
+  "name": "ZULXUMOR QURAN",
+  "description": "AI-powered Quran recitation, memorization, and Tajweed learning application with word-by-word reading lock, letter-level Makharij feedback, authentic Uthmani script, and offline Mushaf support.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

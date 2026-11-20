@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-quran: 'Amiri Quran', 'Scheherazade New', 'Amiri', serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FAF6EE;
+    color: #1E1B16;
+    margin: 0;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-quran {
+  font-family: var(--font-quran);
+  font-feature-settings: "liga" 1, "calt" 1, "ccmp" 1, "mark" 1, "mkmk" 1;
+  text-rendering: optimizeLegibility;
+}
+
+/* Preserve cursive Arabic ligatures when highlighting individual letters/rules */
+.quran-word-span {
+  unicode-bidi: isolate;
+}
+
+.quran-word-span > span {
+  display: inline;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Safe area padding for mobile bottom navigation */
+.pb-safe {
+  padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
